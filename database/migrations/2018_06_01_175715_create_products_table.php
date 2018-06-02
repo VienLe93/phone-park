@@ -17,7 +17,6 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->string('name')->nullable();
             $table->float('price')->nullable();
-            $table->float('promotion_price')->nullable();
             $table->string('thumb')->nullable();
             $table->string('image', 500)->nullable();
             $table->text('body')->nullable();
