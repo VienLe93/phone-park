@@ -17,6 +17,7 @@ class CreateColorProductsTable extends Migration
             $table->increments('id');
             $table->integer('product_id')->nullable();
             $table->integer('color_id')->nullable();
+            $table->string('thumb')->nullable();
             $table->timestamps();
         });
     }
