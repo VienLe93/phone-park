@@ -17,10 +17,24 @@ class RolesTableSeeder extends Seeder
                 ])->save();
         }
 
-        $role = Role::firstOrNew(['name' => 'user']);
+        $role = Role::firstOrNew(['name' => 'staff']);
         if (!$role->exists) {
             $role->fill([
-                    'display_name' => __('voyager::seeders.roles.user'),
+                    'display_name' => 'Staff',
+                ])->save();
+        }
+
+        $role = Role::firstOrNew(['name' => 'agency']);
+        if (!$role->exists) {
+            $role->fill([
+                    'display_name' => 'Agency',
+                ])->save();
+        }
+
+        $role = Role::firstOrNew(['name' => 'buyer']);
+        if (!$role->exists) {
+            $role->fill([
+                    'display_name' => 'Buyer,
                 ])->save();
         }
     }

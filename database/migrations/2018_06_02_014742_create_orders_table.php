@@ -29,7 +29,7 @@ class CreateOrdersTable extends Migration
             $table->enum('payment', [1, 2])->nullable();
             $table->date('delivery_date')->nullable();
             $table->enum('delivery_time', [
-                '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21'
+                9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
             ])->nullable();
             $table->boolean('status');
             $table->timestamps();
